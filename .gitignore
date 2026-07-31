@@ -41,3 +41,6 @@ yarn-error.log*
 next-env.d.ts
 /cangaroos-2026.iml
 /.idea/
+
+*storybook.log
+storybook-static
