@@ -1,0 +1,7 @@
+.scrollBarDemo {
+  composes: scrollbarStyles from "../../../styles/scrollBar.module.css";
+  border: var(--border-thin-blue);
+  cursor: all-scroll;
+  height: var(--size-s128);
+  overflow: scroll;
+}

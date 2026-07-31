@@ -1,0 +1,4 @@
+.scrollbarStyles {
+  scrollbar-color: var(--color-blue-wedge) light-dark(var(--color-white-nylon), var(--color-black-handle));
+  scrollbar-width: thin;
+}

@@ -1,0 +1,33 @@
+@import url("_generated.css");
+
+:root {
+  composes: scrollbarStyles from "scrollBar.module.css";
+}
+
+html,
+body {
+  background: light-dark(var(--color-white-nylon), var(--color-black-handle));
+  color: light-dark(var(--color-black-handle), var(--color-white-nylon));
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+
+}
+
+body,
+body * {
+  font-family: var(--font-family-font-arial);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.grecaptcha-badge {
+  visibility: hidden;
+}
