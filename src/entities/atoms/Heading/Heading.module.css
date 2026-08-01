@@ -1,9 +1,7 @@
 .root {
   --align: left;
-  --color: ;
 
   border: none !important;
-  color: var(--color) !important;
   font-weight: var(--font-weight-bold);
   margin: 0 auto var(--size-s24) !important;
   max-width: var(--global-text-max-width);

@@ -1,7 +1,6 @@
 import { Heading } from "./Heading";
 import { Meta, StoryObj } from "@storybook/nextjs-vite";
 import { expect, within } from "storybook/test";
-import { colors } from "@/styles/tokens";
 import { ComponentProps } from "react";
 
 const meta: Meta<typeof Heading> = {
@@ -20,12 +19,6 @@ const meta: Meta<typeof Heading> = {
     },
     as: {
       options: [undefined, "h1", "h2", "h3", "h4", "h5", "h6"],
-    },
-    color: {
-      control: {
-        type: "color",
-        presetColors: Object.values(colors),
-      },
     },
   },
   args: {

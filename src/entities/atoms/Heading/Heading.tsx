@@ -29,10 +29,6 @@ export type HeadingProps<T extends ElementType> = {
    */
   align?: TextAlignment;
   /**
-   * Color of the text.
-   */
-  color?: Property.Color;
-  /**
    * Apply a subtle shadow behind the text.
    */
   textShadow?: boolean;
@@ -58,7 +54,6 @@ export function Heading<T extends ElementType = "h1">({
   level = "h1",
   as,
   align = "left",
-  color = colors.blackHandle,
   textShadow = false,
   lines,
   children,
@@ -74,7 +69,6 @@ export function Heading<T extends ElementType = "h1">({
       style={
         {
           ...style,
-          "--color": color,
           "--align": align,
           "--line-height": lineHeights.p,
           "--number-of-lines": lines,

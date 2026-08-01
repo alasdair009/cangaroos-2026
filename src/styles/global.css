@@ -4,17 +4,17 @@
   composes: scrollbarStyles from "scrollBar.module.css";
 }
 
+html {
+  box-sizing: border-box;
+  color-scheme: light dark;
+}
+
 html,
 body {
   background: light-dark(var(--color-white-nylon), var(--color-black-handle));
   color: light-dark(var(--color-black-handle), var(--color-white-nylon));
   margin: 0;
   padding: 0;
-}
-
-html {
-  box-sizing: border-box;
-
 }
 
 body,

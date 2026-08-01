@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 
-import "./globals.css";
+import "../styles/global.css";
+import {Footer, Header} from "@/entities";
+import type { ReactNode } from "react";
 
 export const metadata: Metadata = {
   title: "Cambridge Cangaroos",
@@ -10,11 +12,15 @@ export const metadata: Metadata = {
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode;
+  children: ReactNode;
 }>) {
   return (
     <html lang="en">
-      <body className="app-shell">{children}</body>
+      <body>
+      <Header />
+        <main>{children}</main>
+      <Footer />
+      </body>
     </html>
   );
 }
