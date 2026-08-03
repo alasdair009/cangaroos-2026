@@ -3,14 +3,18 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "predev": "npm run generate:css-vars",
     "dev": "next dev",
-    "build": "next build",
+    "build": "npm run generate:css-vars && next build",
     "start": "next start",
     "lint": "eslint",
     "typecheck": "tsc --noEmit",
+    "prestorybook": "npm run generate:css-vars",
     "storybook": "storybook dev -p 6006",
+    "prebuild-storybook": "npm run generate:css-vars",
     "build-storybook": "storybook build",
-    "generate:css-vars": "tsx src/scripts/generate-css-vars.ts"
+    "generate:css-vars": "tsx src/scripts/generate-css-vars.ts",
+    "postinstall": "npm run generate:css-vars"
   },
   "dependencies": {
     "next": "16.2.12",
