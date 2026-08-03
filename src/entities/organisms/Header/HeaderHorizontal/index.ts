@@ -1,0 +1,1 @@
+export { HeaderHorizontal } from "./HeaderHorizontal";

@@ -1,10 +1,7 @@
 import { HTMLAttributes } from "react";
 import styles from "./Header.module.css";
-
-type NavOption = {
-    text: string;
-    href: string;
-}
+import {NavOption} from "@/entities/organisms/Header/Header.types";
+import {HeaderHorizontal} from "@/entities/organisms/Header/HeaderHorizontal";
 
 const navOptions: NavOption[] = [
     {
@@ -43,15 +40,11 @@ export function Header({ className, ...rest }: HTMLAttributes<HTMLDivElement>) {
             data-testid={Header.displayName}
             {...rest}
         >
-            <nav>
-                {/*https://reactbits.dev/components/staggered-menu*/}
-                {navOptions.map((navOption) => {
-                    return (
-                        <span>{navOption.text}</span>
-                    )
-                })}
-            </nav>
+            <div className={styles.inner}>
+                <Header.Horizontal navOptions={navOptions} />
+            </div>
         </header>
     );
 }
 Header.displayName = "Header";
+Header.Horizontal = HeaderHorizontal;

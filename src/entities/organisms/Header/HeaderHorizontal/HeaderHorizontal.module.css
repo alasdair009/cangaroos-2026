@@ -1,0 +1,14 @@
+.root {
+    position: relative;
+}
+
+.list {
+    align-items: center;
+    display: flex;
+    gap: var(--size-s16);
+    height: 100%;
+    list-style: none;
+    margin: 0;
+    position: relative;
+    width: 100%;
+}

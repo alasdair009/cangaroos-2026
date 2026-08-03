@@ -1,0 +1,31 @@
+.root {
+  align-items: center;
+  color: var(--color-blue-push);
+  display: inline-flex;
+  font-size: inherit;
+  font-weight: var(--font-weight-bold);
+  max-width: var(--size-s512);
+  overflow-wrap: break-word;
+  position: relative;
+  text-decoration: none;
+
+  &:hover {
+    filter: brightness(1.3);
+  }
+
+  &:visited,
+  &:active {
+    color: var(--color-blue-push);
+  }
+}
+
+.newTabIcon {
+  display: inline-block;
+  height: var(--size-s16);
+  margin-left: var(--size-s4);
+  width: var(--size-s16);
+}
+
+.clamp {
+  composes: lineClamp from "../../../styles/lineClamp.module.css";
+}
