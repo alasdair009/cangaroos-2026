@@ -87,7 +87,7 @@ const DimensionBar = ({
   <div
     data-width={width}
     style={{
-      background: colors.greenGrass,
+      background: colors.bluePush,
       color: "white",
       flex: 1,
       marginBottom: "8px",
