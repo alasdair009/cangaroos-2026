@@ -29,7 +29,7 @@ export function Link({
       href={href}
       target={isExternalURL ? "_blank" : "_self"}
       rel={isExternalURL ? "noopener" : undefined}
-      data-testid={Link.name}
+      data-testid={Link.displayName}
       style={
         {
           ...style,
@@ -52,3 +52,4 @@ export function Link({
       </NextLink>
   );
 }
+Link.displayName = "Link";
