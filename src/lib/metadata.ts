@@ -4,6 +4,9 @@ import { OpenGraphType } from "next/dist/lib/metadata/types/opengraph-types";
 
 const xHandle = "camcangaroos";
 
+export const cascNumber = `Ch11911`;
+export const address = "Unit P2, Grove Road, Sawston, CB22 3TJ";
+
 export const socialMedia = {
   facebook: "https://www.facebook.com/cangaroos",
   instagram: "https://www.instagram.com/cambridgecangaroos",

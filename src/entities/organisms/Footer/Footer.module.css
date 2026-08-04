@@ -1,3 +1,23 @@
 .root {
+    background: var(--color-blue-wedge);
+    color: var(--color-black-handle);
+    display: flex;
+    position: relative;
+    width: 100%;
+}
 
+.inner {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-s8);
+    justify-content: center;
+    max-width: var(--global-content-max-width);
+    padding-block: var(--size-s16);
+    width: 100%;
+}
+
+.copy {
+    color: var(--color-white-nylon);
+    font-size: var(--font-size-small);
 }

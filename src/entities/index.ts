@@ -5,3 +5,4 @@ export { Paragraph } from "./atoms/Paragraph";
 
 export { Footer } from "./organisms/Footer";
 export { Header } from "./organisms/Header";
+export { Hero } from "./organisms/Hero";
