@@ -1,3 +1,22 @@
 .root {
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 auto;
+    max-width: var(--global-content-max-width);
+    position: relative;
+}
 
+.inner {
+    --mid-blue: color-mix(in srgb, var(--color-blue-wedge) 80%, transparent);
+    background: linear-gradient(to right, var(--mid-blue), var(--mid-blue) 90%, transparent);
+    display: flex;
+    flex-direction: column;
+    padding: var(--size-s40) var(--size-s16);
+    position: relative;
+    width: 30%;
+}
+
+.background {
+    object-fit: cover;
 }
