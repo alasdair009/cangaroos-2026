@@ -1,8 +1,7 @@
-import type { Metadata } from "next";
-
 import "../styles/global.css";
-import {Footer, Header} from "@/entities";
+import { Footer, Header } from "@/entities";
 import type { ReactNode } from "react";
+import { Analytics } from '@vercel/analytics/next';
 
 export default function RootLayout({
   children,
@@ -15,6 +14,7 @@ export default function RootLayout({
       <Header />
         <main>{children}</main>
       <Footer />
+      <Analytics />
       </body>
     </html>
   );
